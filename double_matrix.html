@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<title>strugnell.com labs - Dot matrix display using HTML5 canvas</title>
+<link rel="icon" href="http://www.strugnell.com/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="styles/main.css" type="text/css" />
+
+<script type="text/javascript" src="scripts/dotmatrix.js"></script>
+
+<script type="text/javascript">
+	window.onload = function () {
+    	Strugnell.doubleMatrix();
+	}
+</script>
+
+</head>
+
+<body>
+	
+<div id="content">
+<a href="http://www.strugnell.com"><img src="http://www.strugnell.com/images/strugnell_logo.gif" alt="strugnell.com"/></a>
+<h1><span class="orange">.</span>Dot matrix display using HTML5 canvas</h1>
+
+<canvas id="dotmatrix_canvas1" width="847" height="250">
+	<p>Your browser doesn't support canvas.</p>
+</canvas>
+
+<canvas id="dotmatrix_canvas2" width="847" height="250">
+	<p>Your browser doesn't support canvas.</p>
+</canvas>
+
+
+</div>
+
+<div id="footer">Copyright &copy; 2011, David Strugnell</div>
+
+</body>
+</html>

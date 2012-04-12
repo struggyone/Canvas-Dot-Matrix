@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<title>strugnell.com labs - Dot matrix display using HTML5 canvas</title>
+<link rel="icon" href="http://www.strugnell.com/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" href="styles/main.css" type="text/css" />
+
+<script type="text/javascript" src="scripts/dotmatrix.js"></script>
+
+<script type="text/javascript">
+	window.onload = function () {
+    	Strugnell.singleTwitterMatrix();
+	}
+</script>
+
+</head>
+
+<body>
+	
+<div id="content">
+<a href="http://www.strugnell.com"><img src="http://www.strugnell.com/images/strugnell_logo.gif" alt="strugnell.com"/></a>
+<h1><span class="orange">.</span>Dot matrix display using HTML5 canvas</h1>
+
+<canvas id="dotmatrix_canvas" width="847" height="250">
+	<p>Your browser doesn't support canvas.</p>
+</canvas>
+
+<form id="message_form">
+	<p><lable>Enter a message: <input type="text" id="message" /></lable><input type="submit" value="Go!!" /></p>
+</form>
+
+<form id="twitter_form">
+	<p><lable>Enter a Twitter user ID to get their latest tweet:<br/><span class="at">@</span><input type="text" id="twitter" /></lable><input type="submit" value="Go!!" /></p>	
+</form>
+
+<form>	
+	<!-- <p><lable>Loop: <input type="checkbox" id="loop" /></lable></p> -->
+	<p>
+		<!-- <input type="button" value="Clear" id="reset" />
+		<input type="button" value="Stop" id="stop" /> -->
+		<!--<input type="button" value="Get your message URL" id="getURL" />-->
+	</p>
+</form>	
+
+
+</div>
+
+<div id="footer">Copyright &copy; 2011, David Strugnell</div>
+
+</body>
+</html>
